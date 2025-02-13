@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply text-gray-700;
+  }
+  
+  .prose strong {
+    @apply text-emerald-700 font-semibold;
+  }
+  
+  .prose code {
+    @apply bg-gray-100 px-1.5 py-0.5 rounded text-emerald-700 text-sm;
+  }
+  
+  .prose pre {
+    @apply bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm my-4;
+  }
+  
+  .prose table {
+    @apply w-full border-collapse my-4;
+  }
+  
+  .prose th {
+    @apply bg-emerald-600 text-white p-2 text-left;
+  }
+  
+  .prose td {
+    @apply border border-gray-200 p-2;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-emerald-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-emerald-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-emerald-500;
+}
